@@ -1,6 +1,8 @@
 #PSet2
 HARVARD CS50
 
+Initials, Caesar, Vigenére
+
 Initials:
 
 Implement a program that, given a person’s name, prints a person’s initials, per the below.
