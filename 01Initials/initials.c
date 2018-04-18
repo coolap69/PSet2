@@ -7,8 +7,10 @@ int main(void)
 {
     string name = get_string("Name: ");
 
+    int counter = 0;
+
     //print first initial
-    printf("initials: %c", toupper(name[0]));
+    printf("initials: %c", toupper(name[counter]));
 
     for (int i = 0; i < strlen(name); i++)
     {
