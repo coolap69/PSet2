@@ -5,12 +5,12 @@
 
 int main(void)
 {
-    string name = get_string("Name: ");
+    string name = get_string();
 
-    int counter = 0;
+    // int counter = 0;
 
     //print first initial
-    printf("initials: %c", toupper(name[counter]));
+    printf("%c", toupper(name[0]));
 
     for (int i = 0; i < strlen(name); i++)
     {
@@ -21,7 +21,7 @@ int main(void)
         }
     }
 
-// print initials
+    // print initials
     printf("\n");
 }
 
