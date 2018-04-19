@@ -24,28 +24,34 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    //turn key into integer
-    key = atoi(argv[1]);
+    //turn key into alphabetical mode
+    key = isalpha(argv[1]);
+
+
 
     // prompt for plaintext
     string plaintext = get_string("Plaintext: ");
+
+    for(int j = 0; j < strlen(argv[1]); j++)
+
+
     {
         printf("ciphertext: ");
     }
     for (int i = 0; i < strlen(plaintext); i++)
     {
-        if (!isalpha(plaintext[i]))
+        if (isalpha(plaintext[i]))
         {
             printf("%c", plaintext[i]);
         }
-        else if (isupper(plaintext[i]))
-        {
-            printf("%c", (((plaintext[i] - 'A') + key) % 26 + 'A'));
-        }
-        else if (islower(plaintext[i]))
-        {
-            printf("%c", (((plaintext[i] - 'a') + key) % 26 + 'a'));
-        }
+    //     else if (isupper(plaintext[i]))
+    //     {
+    //         printf("%c", (((plaintext[i] - 'A') + key) % 26 + 'A'));
+    //     }
+    //     else if (islower(plaintext[i]))
+    //     {
+    //         printf("%c", (((plaintext[i] - 'a') + key) % 26 + 'a'));
+    //     }
 
     }
     printf("\n");
@@ -54,3 +60,17 @@ int main(int argc, string argv[])
     return 0;
 
 }
+
+// TODO
+// get the key
+// 2nd command line argument:argv[1]
+// must be alphabetical
+
+// get the plaintext
+// get_string
+
+// encipher
+// one character
+// entire plaintext
+
+// print ciphertext
