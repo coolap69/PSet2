@@ -1,3 +1,7 @@
+// Better error message for command line argument error
+
+// Comments before entering for loop and within for loop
+
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>

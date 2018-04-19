@@ -1,3 +1,14 @@
+// A better error message if the user does not input the key correctly should be used. If I did not know what the program was supposed
+// to do I wouldn't know how to run the program.
+
+// Your comment in the else statement where you are returning an error is asking for a letter, but I think you meant to put an integer
+
+// More comments in your for loop as to what is going on with the code.
+
+// Passes style50
+
+// Received all smiley faces from check50
+
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>
