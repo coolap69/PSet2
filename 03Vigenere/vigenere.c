@@ -8,7 +8,7 @@ int main(int argc, string argv[])
 
 {
     // key from command line argument
-    int key;
+    string key = (argv[1]);
 
     //accepts 2 arguments
     // name of the program
@@ -20,28 +20,29 @@ int main(int argc, string argv[])
     else
         //returning an error if i don't use a letter after ./caesar
     {
-        printf("Usage: ./caesar k \n");
+        printf("Usage: ./caesar + a word \n");
         return 1;
     }
 
     //turn key into alphabetical mode
-    key = isalpha(argv[1]);
+    key = (argv[1]);
 
 
+    // for(int j = 0; j < strlen(key); j++)
+    // if(key[j])
+    // {
+    //     printf("ciphertext: ");
+    //     return 1;
+    // }
 
     // prompt for plaintext
     string plaintext = get_string("Plaintext: ");
 
-    for(int j = 0; j < strlen(argv[1]); j++)
-
-
-    {
-        printf("ciphertext: ");
-    }
     for (int i = 0; i < strlen(plaintext); i++)
     {
         if (isalpha(plaintext[i]))
         {
+            // plaintext[key] = !='\0';
             printf("%c", plaintext[i]);
         }
     //     else if (isupper(plaintext[i]))
@@ -58,7 +59,6 @@ int main(int argc, string argv[])
 
     //returning a 0 if there is no errors
     return 0;
-
 }
 
 // TODO

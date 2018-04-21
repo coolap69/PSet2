@@ -42,7 +42,7 @@ int main(int argc, string argv[])
         {
             printf("%c", (((plaintext[i] - 'A') + key) % 26 + 'A'));
         }
-        else if (islower(plaintext[i]))
+        ellse if (islower(plaintext[i]))
         {
             printf("%c", (((plaintext[i] - 'a') + key) % 26 + 'a'));
         }
